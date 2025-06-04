@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "8S7yQmF3W9o=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\SAM-PC\\Renamer_App\\Renamer_App.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\SAM-PC\\.nuget\\packages\\communitytoolkit.mvvm\\8.4.0\\communitytoolkit.mvvm.8.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}

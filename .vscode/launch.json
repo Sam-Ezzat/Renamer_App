@@ -1,0 +1,27 @@
+// filepath: c:\Users\SAM-PC\Renamer_App\.vscode\launch.json
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach"
+        },
+        {
+            "name": "Launch RenamerApp", // You can name this configuration
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build", // This automatically runs your "build" task before launching
+            // Adjust the path below if your project structure or .NET version is different.
+            // This assumes your .csproj is in a 'RenamerApp' subfolder of your workspace.
+            "program": "${workspaceFolder}/bin/Debug/net9.0-windows/RenamerApp.dll", 
+            // For WPF applications, an .exe might be generated. If so, you can point to that:
+            // "program": "${workspaceFolder}/bin/Debug/net8.0/RenamerApp.exe",
+            "args": [],
+            "cwd": "${workspaceFolder}", // Set current working directory to the project folder
+            "stopAtEntry": false,
+            "console": "internalConsole" // For WPF, output often goes to the Debug Console
+        }
+        // You might have other configurations here
+    ]
+}

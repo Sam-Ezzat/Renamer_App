@@ -1,0 +1,53 @@
+// {
+//     // See https://go.microsoft.com/fwlink/?LinkId=733558
+//     // for the documentation about the tasks.json format
+//     "version": "2.0.0",
+//     "tasks": [
+//         {
+//             "label": "build",
+//             "type": "shell",
+//             "command": "msbuild",
+//             "args": [
+//                 // Ask msbuild to generate full paths for file names.
+//                 "/property:GenerateFullPaths=true",
+//                 "/t:build",
+//                 // Do not generate summary otherwise it leads to duplicate errors in Problems panel
+//                 "/consoleloggerparameters:NoSummary"
+//             ],
+//             "group": "build",
+//             "presentation": {
+//                 // Reveal the output only if unrecognized errors occur.
+//                 "reveal": "silent"
+//             },
+//             // Use the standard MS compiler pattern to detect errors, warnings and infos
+//             "problemMatcher": "$msCompile"
+//         }
+//     ]
+// }
+// .vscode/tasks.json
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run WPF App",
+      "type": "shell",
+      "command": "dotnet run",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
+// This task runs a WPF application using the .NET CLI.
+// It is set to run by default when you build the project.
+// You can modify the command or add arguments as needed.
+// To run this task, use the command palette (Ctrl+Shift+P) and select "Tasks: Run Task".
+// Ensure you have the .NET SDK installed and your project is set up correctly.
+// You can also customize the task further by adding more properties or changing the command.
+// This task is useful for quickly testing your WPF application during development.
+// Make sure to save this file in the .vscode directory of your project.
+// You can also add more tasks for different commands or configurations as needed.
+// If you encounter any issues, check the output panel for error messages.
+// You can also use this task in conjunction with other tasks like building or cleaning your project.
